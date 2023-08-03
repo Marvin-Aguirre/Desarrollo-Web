@@ -1,0 +1,204 @@
+html{
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+body{
+    margin: 0;
+}
+
+.item1 {
+    grid-area: header;
+    background-color: white;
+    height: min-content;
+
+}
+.item2 {
+    padding: 5px;
+    grid-area: sidebar;
+    width: 140px;
+    display: flex;
+   
+}
+.item3 {
+    grid-area: Body;
+    padding-top: 0;
+    height: max-content;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        'sidebar header header header header header'
+        'sidebar Body Body Body Body Body';
+    gap: 5px;
+
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: white;
+    /* text-align: center; */
+}
+.grid-search_Bar{
+    grid-area: left;
+    display: flex;
+
+}
+
+.buttons_right{grid-area: right;
+    display: flex;}
+    
+.grid-header{
+    display: grid;
+    grid-template-areas: 
+        'left right';
+    gap: 40px;
+    text-align: center;
+    padding-bottom: 2px;
+    grid-template-columns: 1fr auto;
+    background-color: #ffffff;
+}
+
+.grid-header > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+
+}
+
+
+.grid-header .search_Bar input{
+    min-width: 60%;
+    margin: 0;
+    height: 20px;
+    line-height: 35px;  
+    border: 1px solid #ccc;  
+    border-radius: 8px;
+    font-size: 12px; 
+    font-family: 'Arial', sans-serif, monospace;
+    
+}
+.grid-header .search_Bar input:focus{
+    border: 1px solid #ccc; /* Cambia el color del borde al hacer clic (puedes ajustar el color según tus preferencias) */
+    outline: none;
+}
+
+.grid-header .search_Bar button{
+    height: max-content;   
+    margin: 0;
+    border: none;
+    border-radius: 20px;
+    color: #545454;
+    background-color: #e3e3e3;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+.grid-header .search_Bar butto:hover{
+    background: #f5f5f5;
+}
+
+.grid-header .buttons_right button{
+    background: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    color: #545454;
+    padding: 0px 12px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.grid-header .buttons_right button:hover{
+    background-color: #e7e7e7;
+}
+
+.buttons_recommendations button{
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    color: #545454;
+    margin-right: 12px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif, monospace;
+    font-size: 12px;
+}
+
+.buttons_recommendations :hover{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+
+.item2 .menu{
+    border: none;
+    padding: 0px;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 100px;
+    width: 50px;
+    height: 30px;
+}
+.item2 .menu:hover{
+    background: #e7e7e7;
+}
+
+
+.item2 .logo{
+    padding-top: px;
+}
+.item2 .logo .bi{
+    background-color: #ffffff;
+    padding-right: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ff0000;
+    top: -6px;
+}
+
+.textLogo{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+.content{
+
+    display: block;
+    height: max-content;
+}
+
+.Lateral_Menu i{
+    margin-right: 5px;
+}
+
+.Lateral_Menu a{
+    display: block;
+    font-size: 10px;
+    padding: 7px 7px;
+    font-family: 'Arial', sans-serif, monospace;
+    border-radius: 5px;
+    color: #545454;
+}
+
+.Lateral_Menu a:hover{
+    background: #e5e5e5;
+    color: rgb(0, 0, 0);
+}
+
+.content {grid-area: content;}
+.nav{grid-area: nav;}
+
+.item2-grid{
+    display: grid;
+    grid-template-areas: 'content'
+    'nav'  ;
+}
+
+.item3 p{
+    background-color: #b8b7b795;
+    text-align: center;
+    height: 80px;
+}
