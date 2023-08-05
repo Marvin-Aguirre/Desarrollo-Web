@@ -1,0 +1,25 @@
+body{
+    font-size:14px 
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+}
+.container ol li a{
+    text-decoration: none;
+    color: blue;
+}
+
+.container ol li{
+    text-decoration: none;
+    color: blue;
+}
+
+ol li a:hover{
+    font-size: 30px;
+} 
+
