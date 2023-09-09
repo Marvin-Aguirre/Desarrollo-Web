@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Archivos Subidos</title>
+</head>
+<body>
+  <h1>Archivos Subidos</h1>
+  <ul>
+    <% contactos.forEach(contacto => { %>
+      <li>
+        <strong>Nombre:</strong> <%= contacto.nombre %><br>
+        <strong>Email:</strong> <%= contacto.email %><br>
+        <strong>Archivo DPI:</strong> <a href="/uploads/<%= contacto.archivoDPI %>" download><%= contacto.archivoDPI %></a><br>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
