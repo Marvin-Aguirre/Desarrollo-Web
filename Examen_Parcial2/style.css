@@ -1,0 +1,87 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+.item1 {
+    display: flex;
+    grid-area: menu;
+    align-items: center;
+    align-content: center;
+
+}
+
+.item2 {
+    grid-area: main;
+    min-height: 750px;
+}
+
+.item3 {
+    grid-area: footer;
+    height: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'menu main main main main main'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    margin: 100px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+.nav-menu {
+    list-style-type: lower-alpha;
+    padding-left: 250px;
+    color: black;
+
+}
+
+ul li {
+    text-decoration: none;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table th,
+#table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.delete-button {
+    background-color: #1b0482;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .delete-button:hover {
+    background-color: #e04128;
+  }
+  
